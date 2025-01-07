@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nuabaru bersatu</title>
+
+    <!-- fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+   <!-- father icons -->
+
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  
+
+  
+
+  <!-- style start -->
+
+
+
+    <style>
+
+        
+
+        /* main style */
+
+        :root{
+
+    --primary: rgb(251, 9, 9);
+
+     --bg: #323336; 
+
+    
+
+}
+
+
+
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    outline: none;
+
+    border: none;
+
+    text-decoration: none;
+
+}
+
+
+
+body{
+
+    font-family: 'poppins',sans-serif;
+
+    background-color: var(--bg);
+
+    color: #fff;
+
+ /* min-height: 5000px; */
+
+}  
+
+        /* main style */
+
+        
+
+/* navbar style */
+
+/* nvabar */
+
+.navbar{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items:center;
+
+    padding: 1,4rem 7%;
+
+    background-color: rgb(19, 17, 17);
+
+    border-bottom: 1px solid #487f6a;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    position:fixed
+
+
+
+}
+
+
+
+
+
+ .navbar .navbar-logo{
+
+    font-size: 2.3rem ;
+
+    font-weight: 700;
+
+    color: #c91919;
+
+    font-style: italic ;
+
+    align-items:center;
+
+    padding: 1,4rem 7%;
+
+ }
+
+
+
+
+
+ .logout-button {
+
+    background-color: #ff4c4c;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+
+    margin: 0 0.5rem;
+
+    display: flex;
+
+    
+
+    
+
+}
+
+
+
+.logout-button:hover {
+
+    background-color: #ff1a1a;
+
+}
+
+
+
+img{
+
+    border-radius: 60%;
+
+}
+
+
+
+ .navbar .navbar-logo span {
+
+color: var(--primary);
+
+ } 
+
+.navbar .navbar-nav a{
+
+    color: hwb(56 3% 5%);
+
+    display: inline-block;
+
+    font: size 2rem;
+
+    margin: 0 1rem;
+
+}
+
+.navbar .navbar-nav a:hover {
+
+    color: whitesmoke;
+
+}
+
+
+
+
+
+
+
+.navbar .navbar-nav a::after { 
+
+    content: '';
+
+    display: block;
+
+    padding-bottom: 0,5rem;
+
+    border-bottom: 0.1rem solid var( --primary);
+
+    transform: scaleX(0);
+
+    transition: 0.1s linear;
+
+}
+
+
+
+.navbar .navbar-nav a:hover::after{
+
+    transform: scaleX(0.5);
+
+}
+
+
+
+.navbar .navbar-extra a{
+
+    color: rgb(212, 157, 112);
+
+    margin: 0 0.5rem;
+
+}
+
+.navbar .navbar-extra a:hover{
+
+    color: var(--primary)
+
+}
+
+/* hamburger-menu */
+
+#hamburger-menu{
+
+    display:none;
+
+}
+
+
+
+/* hero section */
+
+.hero{
+
+min-height:100vh;
+
+display: flex;
+
+align-items: center;
+
+background-repeat: no-repeat;
+
+background-size:"";
+
+background-position: center;
+
+position:center; 
+
+}
+
+
+
+.hero::after{
+
+    content: '';
+
+    display: block;
+
+    position:relative;
+
+    width: 100%;
+
+    height: 100%;
+
+    /* background: linear-gradient(0deg,rgb(57, 57, 92)2%, rgb(57, 57, 92)2%); */
+
+}
+
+
+
+.hero .content {
+
+    padding: 1.7rem 7%;
+
+    max-width: 60rem;
+
+}
+
+
+
+.hero .content h1{
+
+    font-size: 3rem;
+
+    color: #e27115;
+
+    text-shadow: 1px 1px 9px #000000;
+
+    line-height: 1;
+
+}
+
+.hero h2 {
+
+    text-align: center;
+
+    font-size: 1.2rem;
+
+    margin-bottom: rem;
+
+    color: #f90606;
+
+}
+
+
+
+.hero .content h1 span{
+
+    color:rgb(187, 170, 18);
+
+}
+
+ 
+
+.hero .content p {
+
+    color: #dbce19;
+
+font-size: 1.4rem;
+
+margin-top: 1rem;
+
+line-height: 1;
+
+font-weight: 300;
+
+ text-shadow: 1px 1px 3px rgb(32, 32, 32); 
+
+ position: center;
+
+/* mix-blend-mode: difference;  */
+
+}
+
+
+
+.hero .content .cta{
+
+    margin-top: 1rem;
+
+    display: inline-block;
+
+    padding: 0.5rem 1rem;
+
+    font-size: 1.4rem;
+
+    color: #d7d7c9;
+
+    background-color:#d9c6be;
+
+    border-radius: 0.5rem;
+
+    box-shadow: 1px 1px 3px rgb(145, 145, 221 0.5);
+
+}
+
+
+
+/* navbar style and */
+
+
+
+/* about style start */
+
+
+
+
+
+.about{
+
+    padding: 13rem 7% 1.2rem ;
+
+    font-size: 2rem;
+
+    margin-bottom: 1.4rem;
+
+}
+
+
+
+
+
+
+
+.about h1 {
+
+    text-align: center;
+
+    font-size: 2.3rem;
+
+    margin-bottom: 2rem;
+
+    color: #dbce19;
+
+}
+
+
+
+
+
+
+
+.about h1 span
+
+{
+
+    color: #c91919;
+
+}
+
+.about .about{
+
+    display: flex;
+
+    text-align: center;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 2rem;
+
+    color: #dbce19;
+
+}
+
+.about .about span{
+
+    color: #ac3d3d;
+
+}
+
+
+
+
+
+.about p{
+
+    margin-bottom: 0.8rem;
+
+    font-size: 1.7rem;
+
+    font-weight: 100;
+
+    line-height: 1.5;
+
+    color: #f6e607;
+
+    text-shadow: 1px 1px 3px rgb(32, 32, 32); 
+
+}
+
+
+
+
+
+
+
+
+
+/* about style and */
+
+
+
+
+
+
+
+/* Aanggota style start */
+
+
+
+.row-1{
+
+    padding: 19rem 7% 1.5rem ;
+
+    font-size: 2rem;
+
+    margin-bottom: 1.4rem;
+
+}
+
+
+
+
+
+.about .row .about-img{
+
+  flex: 1 1 30rem;
+
+  position: center;
+
+}
+
+.anggota .row-1 .anggota-img.agt img{
+
+  width: 100%;
+
+  border-image-slice: 10%;
+
+  position: center;
+
+}
+
+
+
+.row-1 h2 span, .visi-misi span,.contact span{
+
+    color: #ac3d3d; 
+
+}
+
+.row-1 h2,.visi-misi h2, .contact h2{
+
+    text-align: center;
+
+    font-size: 2.3rem;
+
+    margin-bottom: 2rem;
+
+    color: #dbce19;
+
+}
+
+
+
+
+
+    /* Aanggota style and */
+
+
+
+
+
+    
+
+
+
+   .row-agt{
+
+    padding: 5rem 7% 1.6rem ;
+
+    font-size: 2rem;
+
+    margin-bottom: 1.4rem;
+
+   } 
+
+    
+
+    table {
+
+      font-family: arial, sans-serif;
+
+      border-collapse: collapse;
+
+      width: 100%;
+
+    }
+
+    
+
+    td  {
+
+      border: 2px solid #dbbfba;
+
+      text-align: left;
+
+      padding: 8px;
+
+      color: #f8e805;
+
+    }
+
+
+
+    td:hover{
+
+      /* display: block; */
+
+      background-color: #7c7870;
+
+    }
+
+    
+
+    th{
+
+      border: 3px solid #dbbfba;
+
+      text-align: left;
+
+      padding: 8px;
+
+      color: #f71505;
+
+      background-color: #f8e805;
+
+    }
+
+    
+
+    th:hover{
+
+      background-color: #7c7870;
+
+    }
+
+
+
+    /* tabel style and */
+
+
+
+    /* contact style start */
+
+
+
+
+
+.my-contact{
+
+    padding: 8rem 7% 1.2rem ;
+
+    font-size: 2rem;
+
+    margin-bottom: 1.4rem;
+
+}
+
+.contact .row  {
+
+display: flex;
+
+margin-top: 2rem;
+
+background-color: #8b7823;
+
+flex-wrap: wrap;
+
+  }
+
+
+
+  .contact .row .map{
+
+flex: 1 1 45rem;
+
+width: 100%;
+
+object-fit: cover;
+
+  }
+
+
+
+.contact .row form { 
+
+flex: 1 1 45rem;
+
+padding: 5rem 2 rem;
+
+text-align:center ;
+
+  }
+
+
+
+.contact .row form .input-grup{
+
+    display: flex; 
+
+    align-items: center;
+
+    margin-top: 2rem;
+
+    background-color: #e7d319;
+
+    border: 1px solid #e2ab15;
+
+    padding-left: 2rem;
+
+  }
+
+
+
+  .contact .row form .input-grup input {
+
+width: 100%;
+
+padding: 2rem;
+
+font-size: 1.6rem;
+
+background: none;
+
+color: #685b5b;
+
+  }
+
+
+
+  .contact p span{
+
+font: size 1.6em;
+
+color:red;
+
+  }
+
+
+
+  /* contact sosmed */
+
+  
+
+.contact-info {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+}
+
+
+
+.contact-button {
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: #4CAF50;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    transition: background-color 0.2s;
+
+}
+
+
+
+.contact-button:hover {
+
+    background-color:blue;
+
+}
+
+
+
+
+
+
+
+/* media queries */
+
+
+
+ /*laptop  */
+
+ @media (max-width:1366px){
+
+    html{
+
+        font-size: 75%;
+
+    }
+
+}
+
+
+
+ 
+
+ /* tablet */
+
+ 
+
+ @media (max-width:758px){
+
+    html{
+
+        font-size: 62.5%;
+
+    }
+
+
+
+    #hamburger-menu {
+
+        display:inline-block;
+
+    }
+
+
+
+.navbar .navbar-nav {
+
+    position: absolute;
+
+    top: 100%;
+
+    right: -100%;
+
+    background-color: rgb(114, 65, 65);
+
+    width: 20rem;
+
+    height: 100vh;
+
+    transition: 0.3s;
+
+}
+
+
+
+.navbar .navbar-nav.active{
+
+    right: 0%;  
+
+}
+
+.navbar .navbar-nav a{
+
+    color: var(--primary);
+
+    display: block;
+
+    margin: 1.5rem;
+
+    padding: 0.5rem;
+
+    font-size: 2;
+
+}
+
+
+
+.navbar .navbar-nav a::after{
+
+    transform-origin: 0 0;
+
+}
+
+
+
+.navbar .navbar-nav a:hover::after{
+
+    transform: scaleX(0.2);
+
+}
+
+} 
+
+.about .row{
+
+    flex-wrap: wrap;
+
+} 
+
+.about .row.about-img img{
+
+height: 0.1rem;
+
+object-fit: cover;
+
+object-position: center;
+
+}
+
+.about .row.content{
+
+    padding: 0;
+
+}
+
+.about.row.content h3{
+
+    margin-top: 1rem;
+
+    font-size: 2rem;
+
+}
+
+.about.row.content p{
+
+    font-size: 1.6rem;
+
+}
+
+.anggota p{
+
+    font-size: 1.2rem;
+
+}
+
+
+
+
+
+ /*  mobile phone*/
+
+
+
+ @media (max-width:450px){
+
+    html{
+
+        font-size: 55%;
+
+    }
+
+}
+
+
+
+footer {
+
+    background: #333;
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 10}
+
+ 
+
+   </style>
+
+
+
+ <!-- style and -->
+
+
+
+</head>
+
+<body>
+
+<h3>selamat datang di website kami <?=   $_SESSION["username"] ?></h3>
+
+
+
+
+
+    <!-- navbar start -->
+
+    <nav class="navbar">
+
+    <form  action="dashboard.php" method="POST">
+
+      <button class="logout-button" type="submit" name="logout"><i data-feather="log-out"></i></button>
+
+    </form> 
+
+    <img src="logo new nbr.png" alt="Avatar">
+
+<a href="#" class="navbar-logo"> <marquee ><span>Nuabaru Bersatu </span></marquee></a>
+
+
+
+
+
+<div class="navbar-nav">
+
+
+
+    <a href="#home">Home</a>
+
+    <a href="#about">About</a>
+
+    <a href="#visi-misi">Visi-Misi</a>
+
+    <a href="#anggota">anggota</a>
+
+    <a href="#contact">Kontak</a> 
+
+    
+
+    
+
+</div>
+
+
+
+
+
+<div class="navbar-extra">
+
+
+
+    <a href="#" id="search"><i data-feather="search"></i></a>
+
+    <a href="#list-pemain" id="search"><i data-feather="user-check"></i></a>
+
+    <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+
+   
+
+</div>
+
+
+
+</nav>
+
+
+
+    <!-- navbar and-->
+
+
+
+    <!-- home section start -->
+
+    <section class="hero" id="home">
+
+ 
+
+        <main class="content">
+
+            <h1>Komunitas Nuabaru Bersatu</h1>
+
+            <p>selamat datang di website resmi komunitas Nuabaru bersatu </p>
+
+            <br>
+
+        
+
+            <a href="#" class="cta"> <h2>Laporkan Penipuan Yang Atas Namakan Komunitas !!!</h2> </a>
+
+            <br>
+
+            <br>
+
+            <footer>
+
+        <p>© 2024 Nuabaru Bersatu. All rights reserved.</p>
+
+    </footer>
+
+        </main>
+
+        
+
+
+
+    </section>
+
+        <!-- home section and -->
+
+
+
+        <!-- about section start-->
+
+
+
+        <section class="about" id="about">
+
+        
+
+            
+
+               <h1> <span>Tentang</span> Komunitas</h1> 
+
+                <a href="about" class="about-logo"><img src="circalae loggo mini.png" alt="logo"></a>
+
+                <p>adalah komunitas yang dibentuk</p>
+
+                <p>untuk mempererat tali persaudaraan dan rasa solideritas  dalam kampung </p>
+
+                <p>yang mliputi kegiatan hajatan perkawinan dan kematian </p>
+
+
+
+        </section>
+
+
+
+
+
+
+
+        <!-- about section and-->
+
+        
+
+<!-- visi misi section start -->
+
+
+
+<section id="visi-misi" class="about">
+
+    <section id="visi-misi" class="visi-misi">
+
+        <h2><span>Nuabaru</span> Bersatu </h2> 
+
+    <section class="row">
+
+        <div class="about-img">
+
+            <img src="circalae loggo mini.png" alt="tentang Komunitas">
+
+        </div>
+
+        </section>
+
+    
+
+        <div class="content" id="visi-misi">
+
+            
+
+            <h3><span>VISI</span></h3>
+
+            <p>Terwujudnya masyrakat yang perduli akan sesama</p>
+
+           
+
+            <h3><span>MISI</span></h3>
+
+            <p>* Mempererat tali persaudaraan</p>
+
+            <p>* Saling mengasihi antar anggota sehingga tidak ada yang merasa tersisihkan</p>
+
+            <p>* Menghargai pendapat sesama</p>
+
+            <p>* Menjadi teladan bagi anak cucu</p>
+
+          </div>
+
+        </div>
+
+
+
+
+
+      </section>
+
+
+
+<!-- visi misi section and -->
+
+
+
+
+
+  <!-- tabel on js start -->
+
+
+
+
+
+  <section claas="anggota" id="anggota">
+
+    
+
+    <class= class="row-1">
+
+  </div>
+
+  <h2 class="row-agt"><span>Anggota</span> Komunitas</h2>
+
+  <table id="employeeTable">          
+
+    <thead>
+
+    
+
+        <tr>
+
+            <th>Nama</th>
+
+            <th>Jabatan</th>
+
+            <th>Status</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        <!-- Rows will be added here dynamically -->
+
+    </tbody>
+
+</table>
+
+
+
+<script>
+
+    // daftar sampel anggota komunitas
+
+    const employees = [
+
+        { name: "DEDU", position: "KETUA KOMUNITAS", status: "ORANG TUA" },
+
+        { name: "LEO", position: "WAKIL KOMUNITAS", status: "ORANG TUA" },
+
+        { name: "NABAS", position: "SEKERTARIS", status: "ORANG TUA" },
+
+        { name: "LORENS", position: "SEKSI KEROHANIAN", status: "ORANG TUA" },
+
+        { name: "MELKI", position: "SEKSI KEROHANIAN", status: "ORANG TUA" },
+
+        { name: "AGUS", position: "SEKSI DEKORASI", status: "ORANG TUA" },
+
+        { name: "MARTIN", position: "SEKSI DEKORASI", status: "ORANG TUA" },
+
+        { name: "VINSEN ", position: "SEKSI OPERASIONAL", status: "ORANG TUA" },
+
+        { name: "HASTEN", position: "SEKSI PERLENGKAPAN", status: "ORANG TUA" },
+
+        { name: "YANTO", position: "SEKSI PEMBANTAIAN", status: "ORANG TUA" },
+
+        { name: "KORSINI", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "NADUS", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "BENE", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "MIRI", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "YOS", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "YANUS", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "JANSEN", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "GELAGAR", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "BOY", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "DEDE JEN", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "RUS", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "SESO", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "LUTER", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "SON", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "NIKO", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "ANIS", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "NO LEWE", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "DENIS", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "JOGO", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "ANDI", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "KODA", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "SIRIAKUS", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "YUBEL", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "RONY", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "ARISTO", position: "ANGGOTA", status: "ORANG TUA" },
+
+        { name: "NONG", position: "ANGGOTA", status: "ANAK MUDAH" },
+
+        { name: "BERNO", position: "ANGGOTA", status: "ANAK MUDAH" },
+
+        { name: "DINO", position: "ANGGOTA", status: "ANAK MUDAH" },
+
+        { name: "VIAN", position: "ANGGOTA", status: "ANAK MUDAH" },
+
+        { name: "SANDRY", position: "ANGGOTA", status: "ANAK MUDAH" },
+
+        { name: "KEVIN", position: "ANGGOTA", status: "ANAK MUDAH" },
+
+        { name: "KLAUS", position: "ANGGOTA", status: "ANAK MUDAH" },
+
+        { name: "ARWINTO", position: "ANGGOTA", status: "ANAK MUDAH" },
+
+        
+
+    ];  
+
+
+
+    // Function to populate the table
+
+    function populateTable() {
+
+        const tableBody = document.getElementById('employeeTable').getElementsByTagName('tbody')[0];
+
+
+
+        employees.forEach(employee => {
+
+            const row = tableBody.insertRow();
+
+
+
+            const cellName = row.insertCell(0);
+
+            const cellPosition = row.insertCell(1);
+
+            const cellStatus = row.insertCell(2);
+
+            
+
+            cellName.textContent = employee.name;
+
+            cellPosition.textContent = employee.position;
+
+            cellStatus.textContent = employee.status;
+
+        });
+
+    }
+
+
+
+    // Call the function to populate the table when the page loads
+
+    window.onload = populateTable;
+
+</script>
+
+</section>
+
+
+
+          <!-- tabel on js and -->
+
+
+
+          <!-- contact section start -->
+
+
+
+          <section class="my-contact">
+
+
+
+            <section id="contact" class="contact">
+
+                 <h2>kontak<span>kami</span></h2>
+
+               <p>Hubungi Admin<span> Komunitas Nuabaru Bersatu</span>  untuk info lebih lanjut </p>
+
+             <div class="row">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15772.849216936536!2d122.01965665541995!3d-8.766085999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dad3f0025f95f75%3A0x61669e898fbf4e48!2sNuabaru%20wawo!5e0!3m2!1sid!2sid!4v1732376590805!5m2!1sid!2sid"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+             <form action="">
+
+               <div class="input grup">
+
+                 <i data-feather="user"></i> 
+
+                 <input type="text"
+
+                 placeholder="Nama">
+
+               </div>
+
+               <div class="input grup">
+
+                 <i data-feather="mail"></i> 
+
+                 <input type="text"
+
+                 placeholder="email">
+
+               </div>
+
+               <div class="input grup">
+
+                 <i data-feather="phone"></i> 
+
+                 <input type="text"
+
+                 placeholder="No hp">
+
+               </div>
+
+               
+
+             </form>
+
+           
+
+             </div>  
+
+             <p>Untuk info detail komunitas, hubungi kontak oficial dibawah ini. </p>
+
+             </section>
+
+           </div> 
+
+           
+
+           <section>
+
+                   <div class="contact-info">
+
+                       <a href="https://wa.me/082237256471" class="contact-button">
+
+                           <i class="phosphor-icon ph-light ph-whatsapp"></i> WhatsApp
+
+                       </a>
+
+                       <a href="https://www.tiktok.com/@sagykadha" class="contact-button">
+
+                           <i class="phosphor-icon ph-light ph-tiktok"></i> TikTok
+
+                       </a>
+
+                   </div>
+
+                   </section>
+
+               
+
+           </section>
+
+           </div>
+
+           </section>
+
+           <!-- contact section and -->
+
+       
+
+<!-- footer section start -->
+
+<footer>
+
+        <p>© 2024 Nuabaru Bersatu. All rights reserved. By:sagy kadha</p>
+
+    </footer>
+
+
+
+
+
+<!-- footer section and -->
+
+
+
+     
+
+  <!-- father icons -->
+
+  <script>
+
+      feather.replace();
+
+    </script>
+
+  <!-- my javascript -->
+
+  <script>// toggle class active
+
+    const navbarNav = document.querySelector
+
+    ('.navbar-nav');
+
+    // ketika hamburger menu di klik
+
+    document.querySelector("#hamburger-menu").
+
+    onclick =()=>{
+
+        navbarNav.classList.toggle('active');
+
+    };
+
+    
+
+    // klik di luar sidebar untuk hilanghkan nav
+
+    const hamburger=document.querySelector('#hamburger-menu');
+
+    
+
+    
+
+    document.addEventListener('click', function(e){
+
+        if(!hamburger.contains(e.target) && !navbarNav.contains(e.target)){
+
+            navbarNav.classList.remove('active');
+
+        }
+
+    });</script>
+
+    
+
+  </body>
+
+  </html>
